@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura i Outdoor - Menorca d'Hivern</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+
+    <style>
+        .guia-item {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/imagotip.svg" alt="Menorca Hivern"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="festes.html">Festes</a></li>
+                <li><a href="gastronomia.html">Gastronomia</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="natura.html" class="active">Natura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="split-layout">
+        <!-- MAPA!!!!!!! -->
+        <aside id="map-container">
+            <div id="map"></div>
+        </aside>
+
+        <button id="map-toggle-btn" title="Amagar Mapa">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Contingut principal -->
+        <main class="content-area">
+            <h1 class="page-title">Natura i Outdoor</h1>
+            <p class="page-intro">Camí de Cavalls i espais naturals espectaculars.</p>
+
+            <!-- SECTOR 1: La Menorca Fosca (Purple #9b59b6) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #9b59b6;">1. Menorca Fosca (Nord-est)</h2>
+
+                <article class="tarjeta label-purple" data-id="etapa-1" onclick="focusOnMap(39.95, 4.26)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Sa+Mesquida"
+                            alt="Maó - Es Grau"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="tarjeta label-purple" data-id="etapa-2" onclick="focusOnMap(39.99, 4.26)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Favaritx"
+                            alt="Es Grau - Favàritx"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="tarjeta label-purple" data-id="etapa-3" onclick="focusOnMap(40.02, 4.18)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Arenal+Castell"
+                            alt="Favàritx - Arenal d'en Castell"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- SECTOR 2: Nord Vermell (Red #e74c3c) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #e74c3c;">2. El Nord Vermell</h2>
+
+                <article class="tarjeta label-red" data-id="etapa-4" onclick="focusOnMap(40.04, 4.10)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Cala+Tirant"
+                            alt="Arenal d’en Castell – Cala Tirant"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="tarjeta label-red" data-id="etapa-5" onclick="focusOnMap(40.05, 4.05)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Cavalleria"
+                            alt="Cala Tirant – Binimel·là"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="tarjeta label-red" data-id="etapa-6" onclick="focusOnMap(40.057, 4.04)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Pregonda"
+                            alt="Binimel·là – Els Alocs"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="tarjeta label-red" data-id="etapa-7" onclick="focusOnMap(40.046, 3.92)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Cala+Pilar"
+                            alt="Els Alocs – Algaiarens"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+
+            <!-- SECTOR 3: Menorca Seca (Yellow #f1c40f) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #f1c40f;">3. Menorca Seca (Oest)</h2>
+
+                <article class="guia-item label-yellow" data-id="etapa-8" onclick="focusOnMap(40.053, 3.88)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Cala+Morell"
+                            alt="Algaiarens – Cala Morell"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-yellow" data-id="etapa-9" onclick="focusOnMap(40.05, 3.82)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Punta+Nati"
+                            alt="Cala Morell – Punta Nati"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-yellow" data-id="etapa-10" onclick="focusOnMap(40.01, 3.79)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Pont+Gil"
+                            alt="Punta Nati – Ciutadella"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-yellow" data-id="etapa-11" onclick="focusOnMap(39.92, 3.82)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Artrutx"
+                            alt="Ciutadella – Cap d’Artrutx"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- SECTOR 4: Sud Paradisíac (Blue #3498db) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #3498db;">4. El Sud Paradisíac</h2>
+
+                <article class="guia-item label-blue" data-id="etapa-12" onclick="focusOnMap(39.932, 3.90)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Turqueta"
+                            alt="Cap d’Artrutx – Cala en Turqueta"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-blue" data-id="etapa-13" onclick="focusOnMap(39.938, 3.96)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Macarella"
+                            alt="Cala en Turqueta – Cala Galdana"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-blue" data-id="etapa-14" onclick="focusOnMap(39.916, 4.03)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Mitjana"
+                            alt="Cala Galdana – Sant Tomàs"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-blue" data-id="etapa-15" onclick="focusOnMap(39.899, 4.07)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Son+Bou"
+                            alt="Sant Tomàs – Son Bou"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-blue" data-id="etapa-16" onclick="focusOnMap(39.871, 4.13)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Cala+Porter"
+                            alt="Son Bou – Cala en Porter"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- SECTOR 5: Sud-est (Orange #e67e22) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #e67e22;">5. Sud-est i Port</h2>
+
+                <article class="guia-item label-orange" data-id="etapa-17" onclick="focusOnMap(39.825, 4.22)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Canutells"
+                            alt="Cala en Porter – Binisafúller"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-orange" data-id="etapa-18" onclick="focusOnMap(39.814, 4.28)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Punta+Prima"
+                            alt="Binisafúller – Punta Prima"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-orange" data-id="etapa-19" onclick="focusOnMap(39.863, 4.29)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Sant+Esteve"
+                            alt="Punta Prima – Cala Sant Esteve"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-orange" data-id="etapa-20" onclick="focusOnMap(39.88, 4.26)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Mao"
+                            alt="Cala Sant Esteve – Maó"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Altres Espais Naturals (Green #2ecc71) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #2ecc71;">Altres Espais Naturals</h2>
+
+                <article class="guia-item label-green" data-id="salbufera" onclick="focusOnMap(39.948, 4.25)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Albufera"
+                            alt="Parc Natural s'Albufera des Grau"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-green" data-id="barranc-algendar" onclick="focusOnMap(39.96, 3.97)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Algendar"
+                            alt="Barranc d'Algendar"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-green" data-id="cova-coloms" onclick="focusOnMap(39.93, 4.01)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Cova+Coloms"
+                            alt="Sa Cova des Coloms"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-green" data-id="el-toro-natura" onclick="focusOnMap(39.98, 4.11)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=El+Toro" alt="El Toro">
+                    </div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-green" data-id="pedreres-lithica" onclick="focusOnMap(40.007, 3.85)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Lithica"
+                            alt="Pedreres de s'Hostal"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-green" data-id="bassa-verda" onclick="focusOnMap(40.03, 3.91)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Bassa+Verda"
+                            alt="Sa Bassa Verda"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-green" data-id="elefant-calamorell" onclick="focusOnMap(40.05, 3.88)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Elefant"
+                            alt="L'Elefant de Cala Morell"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="guia-item label-green" data-id="pont-gil" onclick="focusOnMap(40.01, 3.79)">
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Pont+Gil"
+                            alt="Pont d'en Gil"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/map-toggle.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                if (window.addMapMarker) {
+
+                    // Sector 1 (Purple)
+                    const c1 = '#9b59b6';
+                    window.addMapMarker(39.95, 4.26, c1, '<b>Etapa 1: Maó – Es Grau</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.99, 4.26, c1, '<b>Etapa 2: Es Grau – Favàritx</b>', 'fa-person-hiking');
+                    window.addMapMarker(40.02, 4.18, c1, '<b>Etapa 3: Favàritx – Arenal d’en Castell</b>', 'fa-person-hiking');
+
+                    // Sector 2 (Red)
+                    const c2 = '#e74c3c';
+                    window.addMapMarker(40.04, 4.10, c2, '<b>Etapa 4: Arenal d’en Castell – Cala Tirant</b>', 'fa-person-hiking');
+                    window.addMapMarker(40.05, 4.05, c2, '<b>Etapa 5: Cala Tirant – Binimel·là</b>', 'fa-person-hiking');
+                    window.addMapMarker(40.057, 4.04, c2, '<b>Etapa 6: Binimel·là – Els Alocs</b>', 'fa-person-hiking');
+                    window.addMapMarker(40.046, 3.92, c2, '<b>Etapa 7: Els Alocs – Algaiarens</b>', 'fa-person-hiking');
+
+                    // Sector 3 (Yellow)
+                    const c3 = '#f1c40f';
+                    window.addMapMarker(40.053, 3.88, c3, '<b>Etapa 8: Algaiarens – Cala Morell</b>', 'fa-person-hiking');
+                    window.addMapMarker(40.05, 3.82, c3, '<b>Etapa 9: Cala Morell – Punta Nati</b>', 'fa-person-hiking');
+                    window.addMapMarker(40.01, 3.79, c3, '<b>Etapa 10: Punta Nati – Ciutadella</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.92, 3.82, c3, '<b>Etapa 11: Ciutadella – Cap d’Artrutx</b>', 'fa-person-hiking');
+
+                    // Sector 4 (Blue)
+                    const c4 = '#3498db';
+                    window.addMapMarker(39.932, 3.90, c4, '<b>Etapa 12: Cap d’Artrutx – Cala en Turqueta</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.938, 3.96, c4, '<b>Etapa 13: Cala en Turqueta – Cala Galdana</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.916, 4.03, c4, '<b>Etapa 14: Cala Galdana – Sant Tomàs</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.899, 4.07, c4, '<b>Etapa 15: Sant Tomàs – Son Bou</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.871, 4.13, c4, '<b>Etapa 16: Son Bou – Cala en Porter</b>', 'fa-person-hiking');
+
+                    // Sector 5 (Orange)
+                    const c5 = '#e67e22';
+                    window.addMapMarker(39.825, 4.22, c5, '<b>Etapa 17: Cala en Porter – Binisafúller</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.814, 4.28, c5, '<b>Etapa 18: Binisafúller – Punta Prima</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.863, 4.29, c5, '<b>Etapa 19: Punta Prima – Cala Sant Esteve</b>', 'fa-person-hiking');
+                    window.addMapMarker(39.88, 4.26, c5, '<b>Etapa 20: Cala Sant Esteve – Maó</b>', 'fa-person-hiking');
+
+                    // Otros (Green)
+                    const c6 = '#2ecc71';
+                    window.addMapMarker(39.948, 4.25, c6, '<b>S\'Albufera des Grau</b>', 'fa-tree');
+                    window.addMapMarker(39.96, 3.97, c6, '<b>Barranc d\'Algendar</b>', 'fa-leaf');
+                    window.addMapMarker(39.93, 4.01, c6, '<b>Sa Cova des Coloms</b>', 'fa-mountain-sun');
+                    window.addMapMarker(39.98, 4.11, c6, '<b>El Toro</b>', 'fa-mountain');
+                    window.addMapMarker(40.007, 3.85, c6, '<b>Líthica</b>', 'fa-cubes');
+                    window.addMapMarker(40.03, 3.91, c6, '<b>Sa Bassa Verda</b>', 'fa-water');
+                    window.addMapMarker(40.05, 3.88, c6, '<b>L\'Elefant de Cala Morell</b>', 'fa-camera');
+                    window.addMapMarker(40.01, 3.79, c6, '<b>Pont d\'en Gil</b>', 'fa-camera');
+                }
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>

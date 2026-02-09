@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festes de Menorca - Ciutadella d'Hivern</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+
+    <style>
+        .guia-item {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/imagotip.svg" alt="Menorca Hivern"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="festes.html" class="active">Festes</a></li>
+                <li><a href="gastronomia.html">Gastronomia</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="natura.html">Natura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="split-layout">
+        <!-- Mapa Lateral/Desplegable -->
+        <aside id="map-container">
+            <div id="map"></div>
+        </aside>
+
+        <button id="map-toggle-btn" title="Amagar Mapa">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Contenido Principal -->
+        <main class="content-area">
+            <h1 class="page-title">Festes Tradicionals</h1>
+            <p class="page-intro">Viu la tradició menorquina més enllà de l'estiu.</p>
+
+            <!-- 1. Ciutadella (Red #e74c3c) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #e74c3c;">1. Ciutadella</h2>
+
+                <article class="tarjeta label-red" data-id="sant-antoni" onclick="focusOnMap(40.0002, 3.835)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://menorca.info/images/2024/01/17/sant-antoni.jpg"
+                            alt="Sant Antoni"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="tarjeta label-red" data-id="matances-bujots" onclick="focusOnMap(40.001, 3.834)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Bujots"
+                            alt="Matances de Bujots"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 2. Tota l'Illa (Yellow #f1c40f) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #f1c40f;">2. Tota l'Illa</h2>
+
+                <article class="tarjeta label-yellow" data-id="carnestoltes" onclick="focusOnMap(39.95, 4.05)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Carnaval"
+                            alt="Carnestoltes"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+
+                <article class="tarjeta label-yellow" data-id="dia-balears" onclick="focusOnMap(39.96, 4.08)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Dia+Balears"
+                            alt="Dia de les Illes Balears"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 3. Alaior (Orange #e67e22) -->
+            <section class="categoria-section">
+                <h2 class="categoria-titulo" style="border-color: #e67e22;">3. Alaior</h2>
+
+                <article class="tarjeta label-orange" data-id="fira-camp" onclick="focusOnMap(39.93, 4.14)">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img"><img src="https://via.placeholder.com/400x300?text=Fira+del+Camp"
+                            alt="Fira del Camp"></div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/map-toggle.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                if (window.addMapMarker) {
+                    // 1. Ciutadella (#e74c3c Red)
+                    const c1 = '#e74c3c';
+                    window.addMapMarker(40.0002, 3.835, c1, '<b>Sant Antoni</b><br>Plaça des Born', 'fa-flag');
+                    window.addMapMarker(40.001, 3.834, c1, '<b>Matances de Bujots</b>', 'fa-fire');
+
+                    // 2. Tota l'Illa (#f1c40f Yellow) - Using generic center points or Maó for variety
+                    const c2 = '#f1c40f';
+                    window.addMapMarker(39.88, 4.26, c2, '<b>Carnestoltes</b>', 'fa-masks-theater');
+                    window.addMapMarker(39.96, 4.08, c2, '<b>Dia Illes Balears</b>', 'fa-calendar-day');
+
+                    // 3. Alaior (#e67e22 Orange)
+                    const c3 = '#e67e22';
+                    window.addMapMarker(39.93, 4.14, c3, '<b>Fira del Camp</b>', 'fa-cow');
+                }
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>

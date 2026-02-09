@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomia - Ciutadella d'Hivern</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/imagotip.svg" alt="Menorca Hivern"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="festes.html">Festes</a></li>
+                <li><a href="gastronomia.html" class="active">Gastronomia</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+                <li><a href="natura.html">Natura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="split-layout">
+        <!-- mapa desplegable -->
+        <aside id="map-container">
+            <div id="map"></div>
+        </aside>
+
+        <button id="map-toggle-btn" title="Amagar Mapa">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Contenido Principal -->
+        <main class="content-area">
+            <h1 class="page-title">Gastronomia d'Hivern</h1>
+            <p class="page-intro">NULL</p>
+
+            <section class="categoria-section">
+                <h2 class="categoria-titulo">Plantilla</h2>
+
+                <article class="tarjeta" data-id="mercat-gastronomia">
+                    <button class="btn-info" title="Més informació" onclick="event.stopPropagation(); showInfo(this)">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    <div class="guia-img">
+                        <img src="https://menorca.info/images/2021/05/29/mercat.jpg" alt="exemple">
+                    </div>
+                    <div class="guia-info">
+                        <h3></h3>
+                        <p class="desc"></p>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/map-toggle.js"></script>
+
+</body>
+
+</html>
