@@ -71,8 +71,7 @@ a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     min-height: var(--navbar-height);
     /* Assegurem alçada consistent */
-    flex-direction: row-reverse;
-    /* Logo on Right, Nav on Left for Desktop */
+
 }
 
 .logo {
@@ -168,6 +167,7 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
@@ -188,6 +188,77 @@ footer {
     position: relative;
     z-index: 2;
 }
+
+/* Badge & practical info: hidden for clean card layout */
+.badge {
+    display: none;
+}
+
+.datos-practicos {
+    display: none;
+}
+
+
+/* Grid wrapper: organise tarjeta cards in rows */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+/* Section headings inside the grid span all columns */
+.cards-grid>.categoria-titulo {
+    grid-column: 1 / -1;
+    margin-top: 30px;
+}
+
+.cards-grid>.categoria-titulo:first-child {
+    margin-top: 0;
+}
+
+.cards-grid .tarjeta {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.cards-grid .guia-img {
+    width: 100%;
+    height: 150px;
+    min-width: unset;
+    flex: none;
+    position: relative;
+}
+
+.cards-grid .guia-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Also support credits on full-width tarjeta images */
+.guia-img {
+    position: relative;
+}
+
+/* Photo credit overlay — add a <span class="foto-credit">Autor / Llicència</span>
+   inside any .guia-img to display a small caption on the image */
+.foto-credit {
+    position: absolute;
+    bottom: 4px;
+    right: 6px;
+    background: rgba(0, 0, 0, 0.50);
+    color: #fff;
+    font-size: 0.62rem;
+    padding: 1px 6px;
+    border-radius: 3px;
+    pointer-events: none;
+    white-space: nowrap;
+    max-width: 92%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
 
 /*Layout dividit (mapa + cntingut)*/
 .split-layout {
@@ -285,7 +356,8 @@ footer {
 }
 
 /*Diseny contenedor info*/
-.tarjeta {
+.tarjeta,
+.guia-item {
     display: flex;
     background: white;
     margin-bottom: 30px;
@@ -295,7 +367,7 @@ footer {
     scroll-margin-top: 100px;
     transition: transform 0.2s;
     position: relative;
-    /* For absolute positioning of info button */
+    cursor: pointer;
 }
 
 /* Info Button */
@@ -323,6 +395,7 @@ footer {
     color: white;
 }
 
+.tarjeta:hover,
 .guia-item:hover {
     transform: translateX(5px);
 }
@@ -449,14 +522,7 @@ footer {
         display: none;
     }
 
-    /* Remove collapsed state overrides since button is hidden */
-    .split-layout.map-collapsed #map-container {
-        /* No specific override for mobile if button is hidden, or reset to default */
-    }
-
-    .split-layout.map-collapsed #map-toggle-btn {
-        /* Reset */
-    }
+    /* Collapsed-state overrides not needed on mobile (toggle button is hidden) */
 
     .content-area {
         height: auto;

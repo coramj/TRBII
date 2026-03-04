@@ -17,8 +17,9 @@ window.cardData = {
         image: "https://www.menorca.es/documents/Imatges/8422img4.JPG",
         imageAuthor: "Menorca.es",
         sources: [
-            { name: "Menorca Talaiòtica", url: "http://www.menorcatalayotica.info/" },
-            { name: "Viquipèdia", url: "https://ca.wikipedia.org/wiki/Naveta_des_Tudons" }
+            { name: "Menorca Talaiòtica – Naveta des Tudons", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=22" },
+            { name: "Viquipèdia – Naveta des Tudons", url: "https://ca.wikipedia.org/wiki/Naveta_des_Tudons" },
+            { name: "UNESCO Paisatge Cultural Talaiòtic", url: "https://whc.unesco.org/en/list/1633" }
         ]
     },
     "poblat-son-catlar": {
@@ -29,7 +30,10 @@ window.cardData = {
         `,
         image: "https://i0.wp.com/www.balearesantigua.com/wp-content/uploads/2019/12/IMG_2007-son-catlar-taula-scaled.jpg?fit=1200%2C764&ssl=1",
         imageAuthor: "Baleares Antigua",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Menorca Talaiòtica – Son Catlar", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=30" },
+            { name: "Viquipèdia – Son Catlar", url: "https://ca.wikipedia.org/wiki/Son_Catlar" }
+        ]
     },
     "torre-en-galmes": {
         title: "Torre d'en Galmés (Alaior)",
@@ -39,7 +43,10 @@ window.cardData = {
         `,
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_torregalmes_900.jpg",
         imageAuthor: "Apunt Menorca",
-        sources: [{ name: "Menorca Talaiòtica", url: "http://www.menorcatalayotica.info/" }]
+        sources: [
+            { name: "Menorca Talaiòtica – Torre d'en Galmés", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=29" },
+            { name: "Viquipèdia – Torre d'en Galmés", url: "https://ca.wikipedia.org/wiki/Torre_d%27en_Galm%C3%A9s" }
+        ]
     },
     "torralba-salort": {
         title: "Torralba d'en Salort (Alaior)",
@@ -49,7 +56,10 @@ window.cardData = {
         `,
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_torralba-1.jpg",
         imageAuthor: "Apunt Menorca",
-        sources: [{ name: "Menorca Turisme", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Menorca Talaiòtica – Torralba d'en Salort", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=28" },
+            { name: "Viquipèdia – Torralba d'en Salort", url: "https://ca.wikipedia.org/wiki/Torralba_d%27en_Salort" }
+        ]
     },
     "necropolis-calescoves": {
         title: "Necròpolis de Calescoves (Alaior)",
@@ -59,7 +69,10 @@ window.cardData = {
         `,
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_necropolis_calescoves.jpg",
         imageAuthor: "Apunt Menorca",
-        sources: [{ name: "Descobreix Menorca", url: "https://www.descobreixmenorca.com" }]
+        sources: [
+            { name: "Viquipèdia – Necròpolis de Calescoves", url: "https://ca.wikipedia.org/wiki/Necr%C3%B2polis_de_Calescoves" },
+            { name: "Apunt Menorca – Calescoves", url: "https://apuntmenorca.com/calescoves/" }
+        ]
     },
     "talati-dalt": {
         title: "Talatí de Dalt (Maó)",
@@ -69,7 +82,10 @@ window.cardData = {
         `,
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_talati.jpg",
         imageAuthor: "Apunt Menorca",
-        sources: [{ name: "Menorca Talaiòtica", url: "http://www.menorcatalayotica.info/" }]
+        sources: [
+            { name: "Menorca Talaiòtica – Talatí de Dalt", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=27" },
+            { name: "Viquipèdia – Talatí de Dalt", url: "https://ca.wikipedia.org/wiki/Talat%C3%AD_de_Dalt" }
+        ]
     },
     "rafal-rubi": {
         title: "Navetes de Rafal Rubí (Alaior)",
@@ -79,7 +95,9 @@ window.cardData = {
         `,
         image: "https://www.menorca.es/documents/Imatges/263imgpub.JPG",
         imageAuthor: "Menorca.es",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Navetes de Rafal Rubí", url: "https://ca.wikipedia.org/wiki/Navetes_de_Rafal_Rub%C3%AD" }
+        ]
     },
     "trepuco": {
         title: "Poblat de Trepucó (Maó)",
@@ -89,7 +107,10 @@ window.cardData = {
         `,
         image: "https://www.menorca.es/documents/Imatges/8452img4.JPG",
         imageAuthor: "Menorca.es",
-        sources: [{ name: "Menorca Talaiòtica", url: "http://www.menorcatalayotica.info/" }]
+        sources: [
+            { name: "Menorca Talaiòtica – Trepucó", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=26" },
+            { name: "Viquipèdia – Trepucó", url: "https://ca.wikipedia.org/wiki/Poblat_de_Treput%C3%B3" }
+        ]
     },
     "son-olivaret": {
         title: "Sepulcre de Son Olivaret (Ciutadella)",
@@ -109,7 +130,9 @@ window.cardData = {
         `,
         image: "https://www.menorcadiferente.com/wp-content/uploads/2010/01/necropolis-cala-morell-ciutadella-menorca.jpg",
         imageAuthor: "Menorca Diferente",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Necròpolis de Cala Morell", url: "https://ca.wikipedia.org/wiki/Necr%C3%B2polis_de_Cala_Morell" }
+        ]
     },
     "poblat-cala-morell": {
         title: "Poblat de Cala Morell",
@@ -129,7 +152,10 @@ window.cardData = {
         `,
         image: "https://upload.wikimedia.org/wikipedia/commons/5/58/E3_Taula_de_Torrellafuda_entre_l%27alzinar.JPG",
         imageAuthor: "Wikimedia Commons",
-        sources: [{ name: "Menorca Talaiòtica", url: "http://www.menorcatalayotica.info/" }]
+        sources: [
+            { name: "Menorca Talaiòtica – Torrellafuda", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=23" },
+            { name: "Viquipèdia – Torrellafuda", url: "https://ca.wikipedia.org/wiki/Torrellafuda" }
+        ]
     },
     "torretrencada": {
         title: "Torretrencada (Ciutadella)",
@@ -139,7 +165,10 @@ window.cardData = {
         `,
         image: "https://www.menorca.es/documents/Imatges/8450img4.JPG",
         imageAuthor: "Menorca.es",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Menorca Talaiòtica – Torretrencada", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=24" },
+            { name: "Viquipèdia – Torretrencada", url: "https://ca.wikipedia.org/wiki/Torretrencada" }
+        ]
     },
     "cornia-nou": {
         title: "Cornia Nou (Maó)",
@@ -171,7 +200,10 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/basilica-paleocristiana-son-bou.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Basílica de Son Bou", url: "https://ca.wikipedia.org/wiki/Bas%C3%ADlica_paleocristiana_de_Son_Bou" },
+            { name: "Menorca.es – Patrimoni", url: "https://www.menorca.es/contingut.aspx?idpub=5017" }
+        ]
     },
     "sanisera": {
         title: "Ciutat de Sanisera (Es Mercadal)",
@@ -181,7 +213,10 @@ window.cardData = {
         `,
         image: "https://www.menorcatalayotica.info/Documents/Imatges/10860img10.jpg",
         imageAuthor: "Menorca Talaiòtica",
-        sources: [{ name: "Ecomuseu Cap de Cavalleria", url: "http://www.ecomuseusecavalleriamenorca.com/" }]
+        sources: [
+            { name: "Ecomuseu Cap de Cavalleria", url: "http://www.ecomuseucapdecavalleria.com/" },
+            { name: "Viquipèdia – Sanisera", url: "https://ca.wikipedia.org/wiki/Sanisera" }
+        ]
     },
     "castell-santa-agueda": {
         title: "Castell de Santa Àgueda (Ferreries)",
@@ -191,7 +226,9 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/castell-santa-agueda.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Castell de Santa Àgueda", url: "https://ca.wikipedia.org/wiki/Castell_de_Santa_%C3%80gueda" }
+        ]
     },
     "catedral-menorca": {
         title: "Catedral de Santa Maria (Ciutadella)",
@@ -221,7 +258,10 @@ window.cardData = {
         `,
         image: "https://www.menorca.es/documents/Imatges/2761imgpub.jpg",
         imageAuthor: "Menorca.es",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Fort Marlborough", url: "https://ca.wikipedia.org/wiki/Fort_Marlborough" },
+            { name: "Menorca.es – Fort Marlborough", url: "https://www.menorca.es/contingut.aspx?idpub=5063" }
+        ]
     },
 
     // --- EDAT MODERNA ---
@@ -243,7 +283,9 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/torre-fornells.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Torre de Fornells", url: "https://ca.wikipedia.org/wiki/Torre_de_Fornells" }
+        ]
     },
     "illa-rei": {
         title: "Illa del Rei (Maó)",
@@ -263,7 +305,9 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/lazareto.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Lazareto de Maó", url: "https://ca.wikipedia.org/wiki/Llatzaret_de_Ma%C3%B3" }
+        ]
     },
     "fortalesa-mola": {
         title: "Fortalesa de la Mola (Maó)",
@@ -293,7 +337,10 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/sant-lluis.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Ajuntament de Sant Lluís", url: "https://www.ajsantlluis.org/" }]
+        sources: [
+            { name: "Ajuntament de Sant Lluís", url: "https://www.ajsantlluis.org/" },
+            { name: "Viquipèdia – Sant Lluís", url: "https://ca.wikipedia.org/wiki/Sant_Llu%C3%ADs" }
+        ]
     },
     "palaus-senyorials": {
         title: "Palaus Senyorials (Ciutadella)",
@@ -303,7 +350,10 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/palau-salort.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Palau Salort", url: "https://ca.wikipedia.org/wiki/Palau_Salort" },
+            { name: "Menorca.es – Ciutadella Patrimoni", url: "https://www.menorca.es/contingut.aspx?idpub=5050" }
+        ]
     },
     "cami-kane": {
         title: "Camí d'en Kane",
@@ -313,7 +363,9 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/cami-kane.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Camí d'en Kane", url: "https://ca.wikipedia.org/wiki/Cam%C3%AD_d%27en_Kane" }
+        ]
     },
     "pedreres-lithica": {
         title: "Pedreres de s'Hostal (Líthica)",
@@ -333,7 +385,10 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/far-favaritx.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Fars de Balears", url: "http://www.farsdebalears.com/" }]
+        sources: [
+            { name: "Viquipèdia – Far de Favàritx", url: "https://ca.wikipedia.org/wiki/Far_de_Fav%C3%A0ritx" },
+            { name: "Autoritat Portuària de Balears", url: "https://www.portsdebalears.com/ca/fars" }
+        ]
     },
 
     // --- FESTES ---
@@ -345,7 +400,10 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2024/01/17/sant-antoni.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Ajuntament de Ciutadella", url: "http://www.ajciutadella.org/" }]
+        sources: [
+            { name: "Ajuntament de Ciutadella de Menorca", url: "https://www.ajciutadella.org/" },
+            { name: "Viquipèdia – Diada de Menorca", url: "https://ca.wikipedia.org/wiki/Diada_de_Menorca" }
+        ]
     },
     "matances-bujots": {
         title: "Matances de Bujots (Pasqua)",
@@ -355,7 +413,10 @@ window.cardData = {
         `,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Matan%C3%A7a_des_bujots.jpg/1280px-Matan%C3%A7a_des_bujots.jpg",
         imageAuthor: "Wikimedia Commons",
-        sources: [{ name: "Cultura Popular Menorca", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Bujots", url: "https://ca.wikipedia.org/wiki/Bujots" },
+            { name: "Menorca.info – Bujots", url: "https://menorca.info/noticia/29/bujots.html" }
+        ]
     },
     "carnestoltes": {
         title: "Carnestoltes",
@@ -365,7 +426,9 @@ window.cardData = {
         `,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Venice_carnival_mask_%282993907860%29.jpg/800px-Venice_carnival_mask_%282993907860%29.jpg",
         imageAuthor: "Wikimedia Commons (Il·lustratiu)",
-        sources: [{ name: "Agenda Cultural Menorca", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Carnestoltes", url: "https://ca.wikipedia.org/wiki/Carnestoltes" }
+        ]
     },
     "dia-balears": {
         title: "Dia de les Illes Balears (1 març)",
@@ -375,7 +438,10 @@ window.cardData = {
         `,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Catedral_de_Menorca_fa%C3%A7ana.JPG/2560px-Catedral_de_Menorca_fa%C3%A7ana.JPG",
         imageAuthor: "Wikimedia Commons",
-        sources: [{ name: "Govern Balear", url: "http://www.caib.es/" }]
+        sources: [
+            { name: "Govern de les Illes Balears", url: "https://www.caib.es/govern/ca/" },
+            { name: "Viquipèdia – Dia de les Illes Balears", url: "https://ca.wikipedia.org/wiki/Dia_de_les_Illes_Balears" }
+        ]
     },
     "fira-camp": {
         title: "Fira del Camp (Alaior)",
@@ -385,7 +451,10 @@ window.cardData = {
         `,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vaca_menorquina.jpg/800px-Vaca_menorquina.jpg",
         imageAuthor: "Wikimedia Commons",
-        sources: [{ name: "Ajuntament d'Alaior", url: "http://www.alaior.org/" }]
+        sources: [
+            { name: "Ajuntament d'Alaior", url: "https://www.aj-alaior.org/" },
+            { name: "Viquipèdia – Fira del Camp", url: "https://ca.wikipedia.org/wiki/Alaior" }
+        ]
     },
 
     // --- NATURA (Camí de Cavalls) ---
@@ -560,7 +629,10 @@ window.cardData = {
         `,
         image: "https://menorca.info/images/2021/05/29/mercat.jpg",
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Mercat des Claustre", url: "https://www.mercatdesclaustre.com/" }]
+        sources: [
+            { name: "Menorca Turisme – Gastronomia Local", url: "https://www.menorca.es/Contingut.aspx?idpub=13081" },
+            { name: "Ajuntament de Maó – Mercat", url: "https://www.ajmao.org/" }
+        ]
     },
 
     // --- ALTRES NATURA ---
@@ -570,7 +642,10 @@ window.cardData = {
         fullContent: `<p>El cor de la Reserva de Biosfera, un indret clau per a l'observació d'aus i la natura.</p>`,
         image: "https://menorca.info/images/2021/05/29/far-favaritx.jpg", // Nearby area
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Parc Natural", url: "https://www.balearsnatura.com/" }]
+        sources: [
+            { name: "Agència Medi Ambient – Parc Natural s'Albufera", url: "https://www.caib.es/sites/espaisnaturalsprotegitsilles/ca/s_albufera_des_grau/" },
+            { name: "Viquipèdia – S'Albufera des Grau", url: "https://ca.wikipedia.org/wiki/S%27Albufera_des_Grau" }
+        ]
     },
     "barranc-algendar": {
         title: "Barranc d'Algendar",
@@ -578,7 +653,9 @@ window.cardData = {
         fullContent: `<p>Barranc espectacular amb parets de 80 metres i llegendes com la del Pas d'en Revull.</p>`,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cala_Macarella.jpg/800px-Cala_Macarella.jpg", // Algendar ends at Galdana/Macarella area
         imageAuthor: "Wikimedia Commons",
-        sources: [{ name: "Descobreix Menorca", url: "https://www.descobreixmenorca.com/" }]
+        sources: [
+            { name: "Viquipèdia – Barranc d'Algendar", url: "https://ca.wikipedia.org/wiki/Barranc_d%27Algendar" }
+        ]
     },
     "cova-coloms": {
         title: "Sa Cova des Coloms",
@@ -586,7 +663,9 @@ window.cardData = {
         fullContent: `<p>Cova natural gegantina al barranc de Binigaus, usada com a santuari fa milers d'anys.</p>`,
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_necropolis_calescoves.jpg", // Cave-like filler
         imageAuthor: "Apunt Menorca",
-        sources: [{ name: "Menorca Turisme", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Menorca.es – Sa Cova des Coloms", url: "https://www.menorca.es/contingut.aspx?idpub=5038" }
+        ]
     },
     "el-toro-natura": {
         title: "El Toro",
@@ -594,7 +673,10 @@ window.cardData = {
         fullContent: `<p>Mirador excepcional de tota l'illa, on es troba el santuari de la patrona de Menorca.</p>`,
         image: "https://www.menorca.es/documents/Imatges/2761imgpub.jpg",
         imageAuthor: "Menorca.es",
-        sources: [{ name: "Menorca.es", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Santuari del Toro – Web Oficial", url: "https://www.santdeltorodemenorca.com/" },
+            { name: "Viquipèdia – Monte Toro", url: "https://ca.wikipedia.org/wiki/Monte_Toro" }
+        ]
     },
     "bassa-verda": {
         title: "Sa Bassa Verda",
@@ -602,7 +684,9 @@ window.cardData = {
         fullContent: `<p>Fenomen hidrològic curiós: una bassa que només apareix després de fortes pluges als boscos d'Algaiarens.</p>`,
         image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cala_del_Pilar_-_Menorca_-_panoramio.jpg", // Nearby area
         imageAuthor: "Wikimedia Commons",
-        sources: [{ name: "Descobreix Menorca", url: "https://www.descobreixmenorca.com/" }]
+        sources: [
+            { name: "Menorca.es – Algaiarens", url: "https://www.menorca.es/contingut.aspx?idpub=5029" }
+        ]
     },
     "elefant-calamorell": {
         title: "L'Elefant de Cala Morell",
@@ -618,6 +702,9 @@ window.cardData = {
         fullContent: `<p>Espectacular pont de roca a prop de Ciutadella, icona de la costa oest.</p>`,
         image: "https://menorca.info/images/2021/05/29/bastio-sa-font.jpg", // Ciutadella area filler
         imageAuthor: "Menorca.info",
-        sources: [{ name: "Menorca Turisme", url: "https://www.menorca.es" }]
+        sources: [
+            { name: "Viquipèdia – Pont d'en Gil", url: "https://ca.wikipedia.org/wiki/Pont_d%27en_Gil" }
+        ]
+
     }
 };
