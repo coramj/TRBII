@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ca">
 
 <head>
@@ -24,27 +24,28 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inici</a></li>
-                <li><a href="festes.html">Festes</a></li>
+                <li><a href="esdeveniments.html">Esdeveniments</a></li>
                 <li><a href="gastronomia.html" class="active">Gastronomia</a></li>
                 <li><a href="cultura.html">Cultura</a></li>
                 <li><a href="natura.html">Natura</a></li>
             </ul>
         </nav>
-        <button id="search-icon-btn" class="search-icon-btn" aria-label="Cerca"><i class="fa-solid fa-magnifying-glass"></i></button>
     </header>
 
     <main class="content-area">
         <h1 class="page-title">Gastronomia d'Hivern</h1>
         <p class="page-intro">Producte local, cuina de temporada i experiències autèntiques a Menorca.</p>
+        <p class="page-intro" style="font-size: 0.9em; font-style: italic; opacity: 0.8;">Un agraïment molt especial a
+            s'avi Fel i s'avia Sisca per cedir-me la gran majoria de les receptes tradicionals d'aquest apartat. :)</p>
 
         <!-- All food & drink cards — no category separation -->
         <div class="cards-grid">
 
-            <article class="tarjeta label-blue">
+            <article class="tarjeta label-blue" data-id="formatge-mao" onclick="showInfo(this)">
                 <div class="guia-img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mahon-Menorca_cheese.jpg/640px-Mahon-Menorca_cheese.jpg"
                         alt="Formatge Maó-Menorca">
-                    <span class="foto-credit">Bodo / Wikimedia Commons CC BY-SA</span>
+                    <span class="foto-credit">Menorca.es</span>
                 </div>
                 <div class="guia-info">
                     <h3>Formatge Maó-Menorca <span class="badge">DOP</span></h3>
@@ -57,11 +58,11 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-blue">
+            <article class="tarjeta label-blue" data-id="gin-xoriguer" onclick="showInfo(this)">
                 <div class="guia-img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Gin_xoriguer.jpg/480px-Gin_xoriguer.jpg"
                         alt="Gin Xoriguer">
-                    <span class="foto-credit">Wikimedia Commons CC BY-SA</span>
+                    <span class="foto-credit">Amazon</span>
                 </div>
                 <div class="guia-info">
                     <h3>Gin Xoriguer <span class="badge">DGP</span></h3>
@@ -74,10 +75,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-red">
+            <article class="tarjeta label-red" data-id="sobrassada-menorquina" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vaca_menorquina.jpg/800px-Vaca_menorquina.jpg"
-                        alt="Sobrassada Menorquina"></div>
+                        alt="Sobrassada Menorquina">
+                    <span class="foto-credit">Embotits Raima</span>
+                </div>
                 <div class="guia-info">
                     <h3>Sobrassada Menorquina</h3>
                     <p class="desc">Embotit cru curat de carn de porc negre i pebre vermell. Textura tova i
@@ -88,10 +91,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-red">
+            <article class="tarjeta label-red" data-id="camaiot-botifarro" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Matan%C3%A7a_des_bujots.jpg/1280px-Matan%C3%A7a_des_bujots.jpg"
-                        alt="Camaiot i Botifarró"></div>
+                        alt="Camaiot i Botifarró">
+                    <span class="foto-credit">Wikimedia commons</span>
+                </div>
                 <div class="guia-info">
                     <h3>Camaiot i Botifarró</h3>
                     <p class="desc">Embotits cuits exclusius de l'hivern. El camaiot es fa amb cap de porc i
@@ -102,10 +107,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-orange">
+            <article class="tarjeta label-orange" data-id="caldereta-llagosta" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Catedral_de_Menorca_fa%C3%A7ana.JPG/640px-Catedral_de_Menorca_fa%C3%A7ana.JPG"
-                        alt="Caldereta de Llagosta"></div>
+                        alt="Caldereta de Llagosta">
+                    <span class="foto-credit">Recetas de cocina</span>
+                </div>
                 <div class="guia-info">
                     <h3>Caldereta de Llagosta</h3>
                     <p class="desc">El plat més emblemàtic. Llagosta fresca cuinada en brou de peix i tomàquet.
@@ -116,10 +123,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-orange">
+            <article class="tarjeta label-orange" data-id="oliaigua-figues" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cala_Macarella.jpg/800px-Cala_Macarella.jpg"
-                        alt="Oliaigua amb figues"></div>
+                        alt="Oliaigua amb figues">
+                    <span class="foto-credit">Descobreix Menorca</span>
+                </div>
                 <div class="guia-info">
                     <h3>Oliaigua amb Figues</h3>
                     <p class="desc">Sopa freda de pagès: tomàquet, ceba, all i oli, acompanyada amb figues
@@ -130,57 +139,11 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-orange">
-                <div class="guia-img"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Catedral_de_Menorca_fa%C3%A7ana.JPG/640px-Catedral_de_Menorca_fa%C3%A7ana.JPG"
-                        alt="Graixera de Xot"></div>
-                <div class="guia-info">
-                    <h3>Graixera de Xot</h3>
-                    <p class="desc">Guisat de xai al forn amb patates i herbes, cuit lentament en cassola de
-                        terrissa. El plat de diumenge per excel·lència de les cases menorquines.</p>
-                    <ul class="datos-practicos">
-                        <li><i class="fa-solid fa-fire-burner"></i> Cuit en cassola de terrissa</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="tarjeta label-orange">
-                <div class="guia-img"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vaca_menorquina.jpg/800px-Vaca_menorquina.jpg"
-                        alt="Cuinat de Quaresma"></div>
-                <div class="guia-info">
-                    <h3>Cuinat de Quaresma</h3>
-                    <p class="desc">Guisat de llegums i verdures típic del Divendres Sant. Cigrons, mongetes,
-                        bròquil i espinacs. Plat de gran profunditat cultural.</p>
-                    <ul class="datos-practicos">
-                        <li><i class="fa-solid fa-calendar-days"></i> Tradicional de Quaresma</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="tarjeta label-red">
-                <div class="guia-img"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Catedral_de_Menorca_fa%C3%A7ana.JPG/640px-Catedral_de_Menorca_fa%C3%A7ana.JPG"
-                        alt="Perdius amb Col">
-                    <span class="foto-credit">Recepta: tiberisacasa.blogspot.com</span>
-                </div>
-                <div class="guia-info">
-                    <h3>Perdius amb Col</h3>
-                    <p class="desc">Perdiu i col braisades lentament en vi negre amb ceba, all, farigola, llorer i
-                        julivert. Plat de caça hivernal per excel·lència, arrelat a la tradició rural menorquina de la
-                        tardor i l'hivern.</p>
-                    <ul class="datos-practicos">
-                        <li><i class="fa-solid fa-drumstick-bite"></i> Caça local, temporada tardor–hivern</li>
-                        <li><i class="fa-solid fa-wine-bottle"></i> Cuit amb vi negre i herbes aromàtiques</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="tarjeta label-orange">
+            <article class="tarjeta label-orange" data-id="calamar-farcit" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cala_Macarella.jpg/800px-Cala_Macarella.jpg"
                         alt="Calamar Farcit amb Salsa d'Ametlla">
-                    <span class="foto-credit">Recepta: tiberisacasa.blogspot.com</span>
+                    <span class="foto-credit">Tiberis</span>
                 </div>
                 <div class="guia-info">
                     <h3>Calamar Farcit amb Salsa d'Ametlla</h3>
@@ -194,46 +157,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-yellow">
+            <article class="tarjeta label-yellow" data-id="arros-terra" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vaca_menorquina.jpg/800px-Vaca_menorquina.jpg"
-                        alt="Còcs amb Tords">
-                    <span class="foto-credit">Recepta s. XIX: tiberisacasa.blogspot.com</span>
+                        alt="Arròs de la Terra">
+                    <span class="foto-credit">Tiberis</span>
                 </div>
-                <div class="guia-info">
-                    <h3>Còcs amb Tords <span class="badge">s. XIX</span></h3>
-                    <p class="desc">Panets menorquins (còcs) farcits de tord (ocell de caça), sobrassada, botifarró
-                        negre i blanc, i saïm de porc. Recepta tradicional del segle XIX recuperada per la cuinera
-                        Juanita Gelabert. Un bocí d'història en cada mossegada.</p>
-                    <ul class="datos-practicos">
-                        <li><i class="fa-solid fa-dove"></i> Tord, caça menor d'hivern</li>
-                        <li><i class="fa-solid fa-book-open"></i> Recepta del s. XIX documentada</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="tarjeta label-yellow">
-                <div class="guia-img"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Catedral_de_Menorca_fa%C3%A7ana.JPG/640px-Catedral_de_Menorca_fa%C3%A7ana.JPG"
-                        alt="Morena Farcida">
-                    <span class="foto-credit">Recepta s. XVIII: tiberisacasa.blogspot.com</span>
-                </div>
-                <div class="guia-info">
-                    <h3>Morena Farcida <span class="badge">s. XVIII</span></h3>
-                    <p class="desc">Morena sencera farcida d'espinacs cuits, formatge Maó ratllat, ou, pa ratllat i
-                        espècies (marduix, canyella, clavell, nou moscada), embolicada en massa de pa i cuita al forn.
-                        Recepta de luxe del segle XVIII.</p>
-                    <ul class="datos-practicos">
-                        <li><i class="fa-solid fa-fish"></i> Morena de la costa menorquina</li>
-                        <li><i class="fa-solid fa-scroll"></i> Del manual de cuina del s. XVIII</li>
-                    </ul>
-                </div>
-            </article>
-
-            <article class="tarjeta label-yellow">
-                <div class="guia-img"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vaca_menorquina.jpg/800px-Vaca_menorquina.jpg"
-                        alt="Arròs de la Terra"></div>
                 <div class="guia-info">
                     <h3>Arròs de la Terra</h3>
                     <p class="desc">Malgrat el nom, no porta arròs: s'elabora amb blat trencat al morter de pedra (com
@@ -246,10 +175,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-yellow">
+            <article class="tarjeta label-yellow" data-id="raja-forn" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Venice_carnival_mask_%282993907860%29.jpg/800px-Venice_carnival_mask_%282993907860%29.jpg"
-                        alt="Raja al Forn"></div>
+                        alt="Raja al Forn">
+                    <span class="foto-credit">AgroXerxa</span>
+                </div>
                 <div class="guia-info">
                     <h3>Raja al Forn</h3>
                     <p class="desc">La raja (ratjada) és el peix per excel·lència de Menorca. Es cou al forn sobre un
@@ -262,11 +193,11 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-yellow">
+            <article class="tarjeta label-yellow" data-id="maionesa" onclick="showInfo(this)">
                 <div class="guia-img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mayonnaise_%28Plain%29.jpg/640px-Mayonnaise_%28Plain%29.jpg"
                         alt="La Maionesa">
-                    <span class="foto-credit">Wikimedia Commons CC0</span>
+                    <span class="foto-credit">RAC1</span>
                 </div>
                 <div class="guia-info">
                     <h3>La Maionesa <span class="badge">Invent Menorquí</span></h3>
@@ -280,25 +211,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-green">
+            <article class="tarjeta label-green" data-id="formatjades" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mahon-Menorca_cheese.jpg/640px-Mahon-Menorca_cheese.jpg"
-                        alt="Figat de Figues i Ametlles"></div>
-                <div class="guia-info">
-                    <h3>Figat de Figues i Ametlles</h3>
-                    <p class="desc">Melmelada espessa i artesanal elaborada amb figues de l'illa i ametlles torrades. De
-                        textura densa i sabor dolç intens, és l'acompanyament perfecte del formatge Maó curat.</p>
-                    <ul class="datos-practicos">
-                        <li><i class="fa-solid fa-jar"></i> Artesanal, a mercats i botigues locals</li>
-                        <li><i class="fa-solid fa-cheese"></i> Ideal amb formatge Maó curat</li>
-                    </ul>
+                        alt="Formatjades menorquines">
+                    <span class="foto-credit">Els fogons de ca’n sibina</span>
                 </div>
-            </article>
-
-            <article class="tarjeta label-green">
-                <div class="guia-img"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mahon-Menorca_cheese.jpg/640px-Mahon-Menorca_cheese.jpg"
-                        alt="Formatjades menorquines"></div>
                 <div class="guia-info">
                     <h3>Formatjades</h3>
                     <p class="desc">Pastisets rodons farcits de sobrassada, formatge o carn. Presents a totes les
@@ -309,10 +227,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-green">
+            <article class="tarjeta label-green" data-id="amargos-carquinyols" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Gin_xoriguer.jpg/480px-Gin_xoriguer.jpg"
-                        alt="Amargos i Carquinyols"></div>
+                        alt="Amargos i Carquinyols">
+                    <span class="foto-credit">Dulce y salado Menorca</span>
+                </div>
                 <div class="guia-info">
                     <h3>Amargos i Carquinyols</h3>
                     <p class="desc">Galetes i bescuits d'ametlla amarga. Els amargos, típics de Sant Joan; els
@@ -323,10 +243,12 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-green">
+            <article class="tarjeta label-green" data-id="ensaimada-menorquina" onclick="showInfo(this)">
                 <div class="guia-img"><img
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mahon-Menorca_cheese.jpg/640px-Mahon-Menorca_cheese.jpg"
-                        alt="Ensaïmada Menorquina"></div>
+                        alt="Ensaïmada Menorquina">
+                    <span class="foto-credit">Dulce y salado Menorca</span>
+                </div>
                 <div class="guia-info">
                     <h3>Ensaïmada Menorquina</h3>
                     <p class="desc">Pasta llevada, lleugerament dolça i esponjosa, coberta de sucre llustre.
@@ -350,7 +272,9 @@
 
             <article class="tarjeta label-purple" data-id="mercat-gastronomia" onclick="showInfo(this)">
                 <div class="guia-img"><img src="https://menorca.info/images/2021/05/29/mercat.jpg"
-                        alt="Mercat des Claustre del Carme"></div>
+                        alt="Mercat des Claustre del Carme">
+                    <span class="foto-credit">Ajuntament de Maó</span>
+                </div>
                 <div class="guia-info">
                     <h3>Mercat des Claustre del Carme (Maó)</h3>
                     <p class="desc">Mercat gastronòmic en un claustre franciscà del s. XVIII. Formatge, embotits,
@@ -362,9 +286,11 @@
                 </div>
             </article>
 
-            <article class="tarjeta label-purple">
+            <article class="tarjeta label-purple" data-id="mercat-municipal-ciutadella" onclick="showInfo(this)">
                 <div class="guia-img"><img src="https://menorca.info/images/2021/05/29/bastio-sa-font.jpg"
-                        alt="Mercat Municipal de Ciutadella"></div>
+                        alt="Mercat Municipal de Ciutadella">
+                    <span class="foto-credit">Comete Menorca</span>
+                </div>
                 <div class="guia-info">
                     <h3>Mercat Municipal de Ciutadella</h3>
                     <p class="desc">Mercat tradicional al centre de Ciutadella. Fruita i verdura de temporada, peix
@@ -380,26 +306,12 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Menorca Winter Guide. Treball de Recerca de Bachiller.</p>
+        <p>&copy; 2026 Menorcawinter, treball de recerca de bachillerat.</p>
     </footer>
 
     <script src="js/data.js"></script>
-    <script src="js/search.js"></script>
     <script src="js/ui.js"></script>
 
-    <!-- Search Overlay -->
-    <div id="search-overlay" class="search-overlay">
-        <div class="search-modal">
-            <button id="close-search" class="close-search" aria-label="Tancar b�squeda">&times;</button>
-            <div class="search-modal-header">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="global-search" placeholder="Qu� est�s buscant?...">
-            </div>
-            <div id="search-results" class="search-results"></div>
-        </div>
-    </div>
 </body>
 
 </html>
-
-

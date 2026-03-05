@@ -348,7 +348,7 @@ window.cardData = {
         ]
     },
 
-    // --- FESTES ---
+    // --- ESDEVENIMENTS ---
     "sant-antoni": {
         title: "Sant Antoni (17 de Gener)",
         description: "Diada de Menorca. Commemora la conquesta cristiana.",
@@ -359,7 +359,7 @@ window.cardData = {
             { url: "https://men.gsstatic.es/sfAttachPlugin/getCachedContent/id/3630509/width/425/height/283", author: "Menorca info" }
         ],
         image: "https://www.foodiesonmenorca.com/static/bloques/listados_noticias/noticias/7213.m.jpg?1736766869",
-        imageAuthor: "Foodies en Menorca",
+        imageAuthor: "Menorca info",
         sources: [
             { name: "Fiestasmenorca.es – Tres Tocs", url: "https://fiestasmenorca.es/insulares/tres-tocs/" },
             { name: "Viquipèdia – Diada de Menorca", url: "https://ca.wikipedia.org/wiki/Diada_de_Menorca" },
@@ -710,6 +710,117 @@ window.cardData = {
         sources: [
             { name: "Caminosnaturales.es - Pont d'en Gil", url: "https://caminosnaturales.es/es/red-de-caminos-naturales/poi-detalle/ID.04.02.10.23/d4e6f83c-a7b0-43ce-8b7c-c8003074cdd2" }
         ]
+    },
+    "formatge-mao": {
+        title: "Formatge Maó-Menorca",
+        description: "Elaborat amb llet de vaca frisona menorquina des de fa més de 300 anys.",
+        fullContent: "<p>Elaborat amb llet de vaca frisona menorquina des de fa més de 300 anys.</p>",
+        image: "https://www.menorca.es/documents/Imatges/3102imgpub.jpg",
+        imageAuthor: "Menorca.es"
+    },
+    "gin-xoriguer": {
+        title: "Gin Xoriguer",
+        description: "Herència britànica del s. XVIII. L'únic gin amb Denominació Geogràfica Protegida d'Espanya.",
+        fullContent: "<p>Herència britànica del s. XVIII. L'únic gin amb Denominació Geogràfica Protegida d'Espanya.</p>",
+        image: "https://m.media-amazon.com/images/I/51IGLeNaYrL.jpg",
+        imageAuthor: "Amazon"
+    },
+    "sobrassada-menorquina": {
+        title: "Sobrassada Menorquina",
+        description: "Embotit cru curat de carn de porc negre i pebre vermell.",
+        fullContent: "<p>Embotit cru curat de carn de porc negre i pebre vermell.</p>",
+        image: "https://www.embotitsraima.com/wordpress/wp-content/uploads/sobrassada_conjunt_embotits_raima.jpg",
+        imageAuthor: "Embotits Raima"
+    },
+    "camaiot-botifarro": {
+        title: "Camaiot i Botifarró",
+        description: "Embotits cuits exclusius de l'hivern. El camaiot es fa amb cap de porc i espècies; el botifarró és la morcilla local, de sabor suau.",
+        fullContent: "<p>Embotits cuits menorquins. El camaiot es fa amb cap de porc i espècies; el botifarró és la morcilla local, de sabor suau.</p>",
+        image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Camallot.jpg",
+        imageAuthor: "Wikimedia commons"
+    },
+    "caldereta-llagosta": {
+        title: "Caldereta de Llagosta",
+        description: "El plat més emblemàtic. Llagosta fresca cuinada en brou de peix i tomàquet.",
+        fullContent: "<p>El plat més emblemàtic. Llagosta fresca cuinada en brou de peix i tomàquet.</p>",
+        image: "https://www.gastronomiaycia.com/wp-content/uploads/2010/04/caldereta_joanbagur1.jpg",
+        imageAuthor: "Recetas de cocina"
+    },
+    "oliaigua-figues": {
+        title: "Oliaigua amb Figues",
+        description: "Sopa freda de pagès: tomàquet, ceba, all i oli, acompanyada amb figues fresques.",
+        fullContent: "<p>Sopa freda de pagès: tomàquet, ceba, all i oli, acompanyada amb figues fresques. Plat humil i refrescant, l'ànima de la cuina menorquina.</p>",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDaogA5Tmj68Q12_oy7RjHRpM618jy3WUg4Q&s",
+        imageAuthor: "Descobreix Menorca"
+    },
+    "calamar-farcit": {
+        title: "Calamar Farcit amb Salsa d'Ametlla",
+        description: "Calamars sencers farcits de sobrassada, ou i pa ratllat, tancats amb escuradents i cuinats en una salsa espessa d'ametlla torrada, ceba, all, julivert i llet.",
+        fullContent: "<p>Calamars sencers farcits de sobrassada, ou i pa ratllat, tancats amb escuradents i cuinats en una salsa espessa d'ametlla torrada, ceba, all, julivert i llet.</p>",
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiebXi8MKIMKDthlzymykRUfDMimAMd4gOsHWKvJhXNRxtZOScVWspWXVFYrIHI7Sja-8U4PL5I-wMXTvDU_KvsgPb88Hcn85GMqaJaP4TMAF5jByOaOlwf7la2UaaudfDWiRz5lv-R-gO_/s400/P6241294%252C%252C%252C.jpg",
+        imageAuthor: "Tiberis"
+    },
+    "arros-terra": {
+        title: "Arròs de la Terra",
+        description: "Malgrat el nom, no porta arròs: s'elabora amb blat trencat al morter de pedra (com el bulgur), cuit al forn amb sobrassada, botifarró i costelles de porc. D'arrel àrab, es preparava tradicionalment el dia de la matança del porc.",
+        fullContent: "<p>Malgrat el nom, no porta arròs: s'elabora amb blat trencat al morter de pedra, cuit al forn amb sobrassada, botifarró i costelles de porc. D'arrel àrab, es preparava tradicionalment el dia de la matança del porc.</p>",
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI1o95qkwDhOAU2uAsuROUqQEfCBm3SZHM0S0hr6hEGRDmrMRqlBM-ijJYso8Ayde6Cu8V7Os2nsKLqITEBZM1a754gn0hyphenhyphenFH8_BWP_8UtZyF8oXM6y7bUx4kaitI3iIUKyA-DUpJjrKFuGy544JCPMjLCdbweWVl4vMpxIKcBFFL0IymFMnuIIgo5YSWe/w1200-h630-p-k-no-nu/IMG20200621110757.jpg",
+        imageAuthor: "Tiberis",
+        sources: [
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Arroz_de_la_tierra" }
+        ]
+    },
+    "raja-forn": {
+        title: "Raja al Forn",
+        description: "La raja (ratjada) és el peix per excel·lència de Menorca. Es cou al forn sobre un llit de patates, tomàquet i ceba, condimentada amb all, julivert i pa ratllat.",
+        fullContent: "<p>La raja (ratjada) és el peix per excel·lència de Menorca. Es cou al forn sobre un llit de patates, tomàquet i ceba, condimentada amb all, julivert i pa ratllat.</p>",
+        image: "https://agroxerxa.menorca.es/documents/documents/10004doc2.jpg",
+        imageAuthor: "AgroXerxa",
+        sources: [
+            { name: "Descobreixmenorca.com", url: "https://www.descobreixmenorca.com/es/cocina-de-menorca/raya-al-horno/" }
+        ]
+    },
+    "maionesa": {
+        title: "La Maionesa",
+        description: "El 1756, durant l'ocupació francesa, el cuiner del duc de Richelieu va crear aquesta salsa a Maó amb ou i oli local, en absència de nata. La va batejar \"mahonnaise\" en honor a la ciutat. Avui la salsa és universal.",
+        fullContent: "<p>El 1756, durant l'ocupació francesa, el cuiner del duc de Richelieu va crear aquesta salsa a Maó amb ou i oli local, en absència de nata. La va batejar \"mahonnaise\" en honor a la ciutat. Avui és universal.</p>",
+        image: "https://www.rac1.cat/files/image_449_221/files/fp/uploads/2019/12/24/62b44a817507f.r_d.561-306.jpeg",
+        imageAuthor: "RAC1",
+        sources: [
+            { name: "Wikipedia Mayonesa", url: "https://es.wikipedia.org/wiki/Mayonesa" }
+        ]
+    },
+    "formatjades": {
+        title: "Formatjades",
+        description: "Pastes rodones farcides de sobrassada, formatge o carn.",
+        fullContent: "<p>Pastes rodones farcides de sobrassada, formatge o carn.</p>",
+        image: "https://cansibina.com/wp-content/uploads/2017/05/Formatjades-2-retocada-945x709.jpg",
+        imageAuthor: "Els fogons de ca’n sibina"
+    },
+    "amargos-carquinyols": {
+        title: "Amargos i Carquinyols",
+        description: "Galetes d'ametlla amarga.",
+        fullContent: "<p>Galetes i bescuits d'ametlla amarga. Els amargos, típics de Sant Joan; els carquinyols, perfectes per sucar en vi dolç o gin.</p>",
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZ19ocSmMjoEqNgSJhe2miERLml3Z5Ohm3lqd9GTb5lwJuAVrA2Kv-FAcMFJk_EYn1-uCe2HHAZ1Vqb4c1R7jxK9Z2q3DTtTBHke9DHBF6OpxvUUr23-r81HfnPyvUPkPTH8TA8tSiZ8/s1600/Carquinyols+2.jpg",
+        imageAuthor: "Dulce y salado Menorca"
+    },
+    "ensaimada-menorquina": {
+        title: "Ensaïmada Menorquina",
+        description: "Pasta llevada, lleugerament dolça i esponjosa, coberta de sucre llustre. Menys greixosa que la mallorquina, es troba en les variants clàssica, amb sobrassada, cabell d'àngel o crema. Esmorzar de somni a qualsevol forn local.",
+        fullContent: "<p>Pasta llevada, lleugerament dolça i esponjosa, coberta de sucre llustre. Menys greixosa (i més bona!) que la mallorquina, es troba en les variants clàssiques, amb sobrassada, cabell d'àngel o crema.</p>",
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1C8vHmp4x13li7KyRvTCGJ_d9a2ohGjFt7V9DUH0iXKm8E2NvofFoazMUfzcH7f9qEb_pBB4avaux43Tvv5-conw8tSPs0gIL0rmyyakqoSzN8M53KqSJ2MDu8V4X_Lz0SAGl5c9axl8/s1600/Ensaimada+3.JPG",
+        imageAuthor: "Dulce y salado Menorca",
+        sources: [
+            { name: "Dulce y Salados", url: "https://dulceysalados.blogspot.com/2016/07/ensaimada-menorquina.html" },
+            { name: "Tiberis a casa", url: "https://tiberisacasa.blogspot.com/2014/08/coca-bamba-ensaimada-menorquina.html" }
+        ]
+    },
+    "mercat-municipal-ciutadella": {
+        title: "Mercat Municipal de Ciutadella",
+        description: "Mercat tradicional al centre de Ciutadella. Fruita i verdura de temporada, carn, peix i formatge artesanal i local.",
+        fullContent: "<p>Mercat tradicional al centre de Ciutadella. Fruita i verdura de temporada, peix de la llotja local i formatgers artesanals.</p>",
+        image: "https://www.cometemenorca.com/static/uploads/mercat-des-peix-ciutadella.jpg",
+        imageAuthor: "Comete Menorca"
     }
 };
 
