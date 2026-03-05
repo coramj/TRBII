@@ -442,6 +442,75 @@ footer {
     transform: scale(1.1);
 }
 
+/* Modal Carousel */
+.carousel-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+}
+
+.carousel-slide {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--azul-oscuro);
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.carousel-container:hover .carousel-btn {
+    opacity: 1;
+}
+
+.carousel-btn:hover {
+    background: white;
+    color: var(--ocre);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-dots .dot.active,
+.carousel-dots .dot:hover {
+    background: white;
+}
+
 .guia-img {
     flex: 1;
     min-width: 250px;

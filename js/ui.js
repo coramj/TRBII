@@ -50,7 +50,27 @@ function showInfo(triggerElement) {
 
         // Image in Modal
         let imageHTML = '';
-        if (entry.image) {
+        if (entry.images && entry.images.length > 1) {
+            const slides = entry.images.map((img, idx) => `
+                <div class="carousel-slide" style="display: ${idx === 0 ? 'block' : 'none'}; position: relative;">
+                    <img src="${img.url}" alt="${title}" style="width: 100%; border-radius: 8px; max-height: 300px; object-fit: cover;">
+                    ${img.author ? `<figcaption style="font-size: 0.8em; color: #666; margin-top: 5px; text-align: right;">📷 ${img.author}</figcaption>` : ''}
+                </div>
+            `).join('');
+
+            imageHTML = `
+                <figure class="carousel-container" style="position: relative; margin: 0 0 20px 0; width: 100%;">
+                    ${slides}
+                    <button onclick="window.changeSlide(-1)" class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button onclick="window.changeSlide(1)" class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="carousel-dots">
+                        ${entry.images.map((_, idx) => `<span class="dot ${idx === 0 ? 'active' : ''}" onclick="window.setSlide(${idx})"></span>`).join('')}
+                    </div>
+                </figure>
+            `;
+            window.currentCarouselSlides = entry.images.length;
+            window.currentSlideIndex = 0;
+        } else if (entry.image) {
             imageHTML = `
                 <figure style="margin: 0 0 20px 0; width: 100%;">
                     <img src="${entry.image}" alt="${title}" style="width: 100%; border-radius: 8px; max-height: 300px; object-fit: cover;">
@@ -163,3 +183,30 @@ function closeInfo() {
 
 window.showInfo = showInfo;
 window.closeInfo = closeInfo;
+
+// Carousel logic
+window.changeSlide = function (n) {
+    window.setSlide(window.currentSlideIndex + n);
+};
+
+window.setSlide = function (n) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    if (!slides.length) return;
+
+    if (n >= window.currentCarouselSlides) n = 0;
+    if (n < 0) n = window.currentCarouselSlides - 1;
+
+    window.currentSlideIndex = n;
+
+    slides.forEach((slide, idx) => {
+        slide.style.display = idx === n ? 'block' : 'none';
+        if (dots[idx]) {
+            if (idx === n) {
+                dots[idx].classList.add('active');
+            } else {
+                dots[idx].classList.remove('active');
+            }
+        }
+    });
+};

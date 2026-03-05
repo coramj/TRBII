@@ -30,6 +30,7 @@
                 <li><a href="natura.html">Natura</a></li>
             </ul>
         </nav>
+        <button id="search-icon-btn" class="search-icon-btn" aria-label="Cerca"><i class="fa-solid fa-magnifying-glass"></i></button>
     </header>
 
     <main class="content-area">
@@ -347,7 +348,7 @@
 
         <div class="cards-grid">
 
-            <article class="tarjeta label-purple">
+            <article class="tarjeta label-purple" data-id="mercat-gastronomia" onclick="showInfo(this)">
                 <div class="guia-img"><img src="https://menorca.info/images/2021/05/29/mercat.jpg"
                         alt="Mercat des Claustre del Carme"></div>
                 <div class="guia-info">
@@ -382,6 +383,23 @@
         <p>&copy; 2025 Menorca Winter Guide. Treball de Recerca de Bachiller.</p>
     </footer>
 
+    <script src="js/data.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/ui.js"></script>
+
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-modal">
+            <button id="close-search" class="close-search" aria-label="Tancar búsqueda">&times;</button>
+            <div class="search-modal-header">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="global-search" placeholder="Què estàs buscant?...">
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
 </body>
 
 </html>
+
+
