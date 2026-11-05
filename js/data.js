@@ -14,9 +14,8 @@ window.cardData = {
         image: "https://www.menorca.es/documents/Imatges/8422img4.JPG",
         imageAuthor: "Menorca.es",
         sources: [
-            { name: "Menorca Talaiòtica – Naveta des Tudons", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=22" },
-            { name: "Viquipèdia – Naveta des Tudons", url: "https://ca.wikipedia.org/wiki/Naveta_des_Tudons" },
-            { name: "UNESCO Paisatge Cultural Talaiòtic", url: "https://whc.unesco.org/en/list/1633" }
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Naveta_des_Tudons" },
+            { name: "menorca.es", url: "https://www.menorca.es/es/Naveta_des_Tudons/8422" }
         ]
     },
     "poblat-son-catlar": {
@@ -26,8 +25,8 @@ window.cardData = {
         image: "https://i0.wp.com/www.balearesantigua.com/wp-content/uploads/2019/12/IMG_2007-son-catlar-taula-scaled.jpg?fit=1200%2C764&ssl=1",
         imageAuthor: "Baleares Antigua",
         sources: [
-            { name: "Menorca Talaiòtica – Son Catlar", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=30" },
-            { name: "Viquipèdia – Son Catlar", url: "https://ca.wikipedia.org/wiki/Son_Catlar" }
+            { name: "descobreixmenorca.com", url: "https://www.descobreixmenorca.com/es/cultura-talayotica/son-catlar/" },
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Poblado_de_Son_Catlar" }
         ]
     },
     "torre-en-galmes": {
@@ -37,8 +36,9 @@ window.cardData = {
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_torregalmes_900.jpg",
         imageAuthor: "Apunt Menorca",
         sources: [
-            { name: "Menorca Talaiòtica – Torre d'en Galmés", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=29" },
-            { name: "Viquipèdia – Torre d'en Galmés", url: "https://ca.wikipedia.org/wiki/Torre_d%27en_Galm%C3%A9s" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Poblado_talayotico_de_Torre_den_Galmes/8446" },
+            { name: "descobreixmenorca.com", url: "https://www.descobreixmenorca.com/es/cultura-talayotica/torre-den-galmes/" },
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Torre_d%27en_Galmés" }
         ]
     },
     "torralba-salort": {
@@ -48,8 +48,8 @@ window.cardData = {
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_torralba-1.jpg",
         imageAuthor: "Apunt Menorca",
         sources: [
-            { name: "Menorca Talaiòtica – Torralba d'en Salort", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=28" },
-            { name: "Viquipèdia – Torralba d'en Salort", url: "https://ca.wikipedia.org/wiki/Torralba_d%27en_Salort" }
+            { name: "torralbadensalort.com", url: "https://www.torralbadensalort.com/es/inicio" },
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Torralba_den_Salord" }
         ]
     },
     "necropolis-calescoves": {
@@ -59,8 +59,8 @@ window.cardData = {
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_necropolis_calescoves.jpg",
         imageAuthor: "Apunt Menorca",
         sources: [
-            { name: "Viquipèdia – Necròpolis de Calescoves", url: "https://ca.wikipedia.org/wiki/Necr%C3%B2polis_de_Calescoves" },
-            { name: "Apunt Menorca – Calescoves", url: "https://apuntmenorca.com/calescoves/" }
+            { name: "menorca.org", url: "https://www.menorca.org/es/arqueologia-de-menorca/necropolis-cales-coves-menorca/" },
+            { name: "menorca.es", url: "https://www.menorca.es/es/Necropolis_de_Calescoves/8426" }
         ]
     },
     "talati-dalt": {
@@ -70,8 +70,8 @@ window.cardData = {
         image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_talati.jpg",
         imageAuthor: "Apunt Menorca",
         sources: [
-            { name: "Menorca Talaiòtica – Talatí de Dalt", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=27" },
-            { name: "Viquipèdia – Talatí de Dalt", url: "https://ca.wikipedia.org/wiki/Talat%C3%AD_de_Dalt" }
+            { name: "descobreixmenorca.com", url: "https://www.descobreixmenorca.com/es/cultura-talayotica/talati-de-dalt/" },
+            { name: "menorca.es", url: "https://www.menorca.es/es/Poblado_talayotico_de_Talati_de_Dalt/8442" }
         ]
     },
     "rafal-rubi": {
@@ -81,7 +81,7 @@ window.cardData = {
         image: "https://www.menorca.es/documents/Imatges/263imgpub.JPG",
         imageAuthor: "Menorca.es",
         sources: [
-            { name: "Viquipèdia – Navetes de Rafal Rubí", url: "https://ca.wikipedia.org/wiki/Navetes_de_Rafal_Rub%C3%AD" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Navetas_de_Rafal_Rubi/8424" }
         ]
     },
     "trepuco": {
@@ -91,8 +91,8 @@ window.cardData = {
         image: "https://www.menorca.es/documents/Imatges/8452img4.JPG",
         imageAuthor: "Menorca.es",
         sources: [
-            { name: "Menorca Talaiòtica – Trepucó", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=26" },
-            { name: "Viquipèdia – Trepucó", url: "https://ca.wikipedia.org/wiki/Poblat_de_Treput%C3%B3" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Poblado_talayotico_de_Trepuco/8452" },
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Trepucó" }
         ]
     },
     "son-olivaret": {
@@ -101,7 +101,9 @@ window.cardData = {
         fullContent: `<p>Aquest sepulcre és clau per entendre l'evolució de l'arquitectura funerària a l'Edat del Bronze a Menorca.</p>`,
         image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj96wvSkMjmfOmJE2xCyo19Zr7ICHv81HHAqWzE-pwBu7F398NXkGdeS0xdW2GJXyDk675fdOvO3T5HHnlJv4Efn74AYVKY3KZssDHqPuy9cqUoj6gGSdw9RYz9sn0HX9TY0cIBNnOs288/s1600/DSC08606+Sepulcre+de+Son+Olivaret+%2528Ciutadella%2529+15-01-2017.JPG",
         imageAuthor: "Menorca Prehistòrica",
-        sources: []
+        sources: [
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Sepulcro_de_Son_Olivaret" }
+        ]
     },
     "necropolis-cala-morell": {
         title: "Necròpolis de Cala Morell (Ciutadella)",
@@ -110,7 +112,9 @@ window.cardData = {
         image: "https://www.menorcadiferente.com/wp-content/uploads/2010/01/necropolis-cala-morell-ciutadella-menorca.jpg",
         imageAuthor: "Menorca Diferente",
         sources: [
-            { name: "Viquipèdia – Necròpolis de Cala Morell", url: "https://ca.wikipedia.org/wiki/Necr%C3%B2polis_de_Cala_Morell" }
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Necrópolis_de_Cala_Morell" },
+            { name: "menorca.es", url: "https://www.menorca.es/es/Necropolis_de_Cala_Morell/8425" },
+            { name: "descobreixmenorca.com", url: "https://www.descobreixmenorca.com/es/cultura-talayotica/necropolis-de-cala-morell/" }
         ]
     },
     "poblat-cala-morell": {
@@ -120,7 +124,8 @@ window.cardData = {
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Vista_general_del_promontori_on_s%27ubica_el_poblat_prehist%C3%B2ric_de_Cala_Morell_%28Menorca%29.JPG/1200px-Vista_general_del_promontori_on_s%27ubica_el_poblat_prehist%C3%B2ric_de_Cala_Morell_%28Menorca%29.JPG",
         imageAuthor: "Wikimedia Commons",
         sources: [
-            { name: "Viquipèdia", url: "https://ca.wikipedia.org/wiki/Poblat_de_Cala_Morell" }
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Poblado_de_Cala_Morell" },
+            { name: "menorcatalayotica.info", url: "https://www.menorcatalayotica.info/es/Poblado_costero_del_coll_de_Cala_Morell/10699" }
         ]
     },
     "torrellafuda": {
@@ -130,8 +135,8 @@ window.cardData = {
         image: "https://upload.wikimedia.org/wikipedia/commons/5/58/E3_Taula_de_Torrellafuda_entre_l%27alzinar.JPG",
         imageAuthor: "Wikimedia Commons",
         sources: [
-            { name: "Menorca Talaiòtica – Torrellafuda", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=23" },
-            { name: "Viquipèdia – Torrellafuda", url: "https://ca.wikipedia.org/wiki/Torrellafuda" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Poblado_talayotico_de_Torrellafuda/8447" },
+            { name: "descobreixmenorca.com", url: "https://www.descobreixmenorca.com/es/cultura-talayotica/torrellafuda/" }
         ]
     },
     "torretrencada": {
@@ -141,8 +146,8 @@ window.cardData = {
         image: "https://www.menorca.es/documents/Imatges/8450img4.JPG",
         imageAuthor: "Menorca.es",
         sources: [
-            { name: "Menorca Talaiòtica – Torretrencada", url: "http://www.menorcatalayotica.info/Contingut.aspx?IdPub=24" },
-            { name: "Viquipèdia – Torretrencada", url: "https://ca.wikipedia.org/wiki/Torretrencada" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Poblado_talayotico_de_Torretrencada/8450" },
+            { name: "descobreixmenorca.com", url: "https://www.descobreixmenorca.com/es/cultura-talayotica/torretrencada/" }
         ]
     },
     "cornia-nou": {
@@ -152,7 +157,8 @@ window.cardData = {
         image: "https://www.menorcatalayotica.info/Documents/Imatges/10702img13.jpg",
         imageAuthor: "Menorca Talaiòtica",
         sources: [
-            { name: "Menorca Talaiòtica", url: "http://www.menorcatalayotica.info/" }
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Cornia_Nou" },
+            { name: "menorca.es", url: "https://www.menorca.es/es/Talayots_de_Cornia_Nou/8462" }
         ]
     },
     "binialet": {
@@ -171,52 +177,54 @@ window.cardData = {
         title: "Basílica Paleocristiana de Son Bou (Alaior)",
         description: "Restes d'una església del s. V-VI dC a la platja.",
         fullContent: `<p>Testimoni de l'arribada del cristianisme. Es poden veure els fonaments de tres naus i la pica baptismal, situats a pocs metres del mar.</p>`,
-        image: "https://menorca.info/images/2021/05/29/basilica-paleocristiana-son-bou.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://upload.wikimedia.org/wikipedia/commons/0/09/Basilica_Paleocristiana_de_Son_Bou.JPG",
+        imageAuthor: "Wikimedia commons",
         sources: [
-            { name: "Viquipèdia – Basílica de Son Bou", url: "https://ca.wikipedia.org/wiki/Bas%C3%ADlica_paleocristiana_de_Son_Bou" },
-            { name: "Menorca.es – Patrimoni", url: "https://www.menorca.es/contingut.aspx?idpub=5017" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Basilica_de_Son_Bou/9974" },
+            { name: "visitmenorca.com", url: "https://visitmenorca.com/menorca/basilica-paleocristiana-de-son-bou/" }
         ]
     },
     "sanisera": {
         title: "Ciutat de Sanisera (Es Mercadal)",
         description: "Ciutat romana al port de Sanitja.",
         fullContent: `<p>Antiga ciutat romana clau per al comerç marítim al nord de l'illa, situada al voltant del port natural de Sanitja.</p>`,
-        image: "https://www.menorcatalayotica.info/Documents/Imatges/10860img10.jpg",
-        imageAuthor: "Menorca Talaiòtica",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTePImzRSHa7wQ0ZJwPZ757OpwfagLTRBK5Bg&s",
+        imageAuthor: "Viator imperi",
         sources: [
-            { name: "Ecomuseu Cap de Cavalleria", url: "http://www.ecomuseucapdecavalleria.com/" },
-            { name: "Viquipèdia – Sanisera", url: "https://ca.wikipedia.org/wiki/Sanisera" }
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Sanisera" }
         ]
     },
     "castell-santa-agueda": {
         title: "Castell de Santa Àgueda (Ferreries)",
         description: "Fortificació islàmica al cim d'una muntanya.",
         fullContent: `<p>Últim reducte de la resistència musulmana el 1287. Les ruïnes del castell ofereixen vistes espectaculars de tota l'illa.</p>`,
-        image: "https://menorca.info/images/2021/05/29/castell-santa-agueda.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://doralauto.com/wp-content/uploads/2017/04/castillo-santa-agueda-menorca.jpg",
+        imageAuthor: "Doral Auto",
         sources: [
-            { name: "Viquipèdia – Castell de Santa Àgueda", url: "https://ca.wikipedia.org/wiki/Castell_de_Santa_%C3%80gueda" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Castillo_de_Santa_agueda/9802" },
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Castillo_de_Santa_Águeda" }
         ]
     },
     "catedral-menorca": {
         title: "Catedral de Santa Maria (Ciutadella)",
         description: "Gòtic català construït sobre l'antiga mesquita.",
         fullContent: `<p>Temple majestuós del segle XIV. El campanar s'aixeca sobre la base de l'antic minaret de la mesquita islàmica.</p>`,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Catedral_de_Menorca_fa%C3%A7ana.JPG/2560px-Catedral_de_Menorca_fa%C3%A7ana.JPG",
-        imageAuthor: "Wikimedia Commons",
+        image: "https://apuntmenorca.com/wp-content/uploads/2021/02/apuntmenorca_ec_catedral.jpg",
+        imageAuthor: "Apunt Menorca",
         sources: [
-            { name: "Bisbat de Menorca", url: "https://bisbatdemenorca.org/" }
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Catedral_de_Santa_María_(Ciudadela)" },
+            { name: "menorca.es", url: "https://www.menorca.es/es/Catedral_de_Menorca/9926" }
         ]
     },
     "bastio-sa-font": {
         title: "Bastió de Sa Font (Ciutadella)",
         description: "Muralles renaixentistes, seu del Museu Municipal.",
         fullContent: `<p>Imponent fortificació que defensava una de les portes de Ciutadella. Avui acull el Museu Municipal amb una gran col·lecció històrica.</p>`,
-        image: "https://menorca.info/images/2021/05/29/bastio-sa-font.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://www.ajciutadella.org/WebEditor/Pagines/Image/turisme/arqdefensa/bastio.png",
+        imageAuthor: "Ajuntament de ciutadella",
         sources: [
-            { name: "Museu de Ciutadella", url: "https://www.museuciutadella.com/" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Bastion_de_la_Fuente/9843" },
+            { name: "ajciutadella.org", url: "https://www.ajciutadella.org/Contingut.aspx?IdPub=7838" }
         ]
     },
     "santuari-toro": {
@@ -226,8 +234,8 @@ window.cardData = {
         image: "https://www.menorca.es/documents/Imatges/2761imgpub.jpg",
         imageAuthor: "Menorca.es",
         sources: [
-            { name: "Viquipèdia – Fort Marlborough", url: "https://ca.wikipedia.org/wiki/Fort_Marlborough" },
-            { name: "Menorca.es – Fort Marlborough", url: "https://www.menorca.es/contingut.aspx?idpub=5063" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Santuario_de_la_Mare_de_Deu_del_Toro/9964" },
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Santuario_de_la_Virgen_del_Toro" }
         ]
     },
 
@@ -236,40 +244,43 @@ window.cardData = {
         title: "Fort Marlborough (Es Castell)",
         description: "Fort britànic del s. XVIII excavat a la roca.",
         fullContent: `<p>Fascinant fortificació parcialment subterrània construïda pels britànics per defensar l'entrada del port de Maó.</p>`,
-        image: "https://menorca.info/images/2021/05/29/fort-marlborough.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://viuelport.com/wp-content/uploads/2025/04/Fort-Marlborough.webp",
+        imageAuthor: "viuelport.com",
         sources: [
-            { name: "Menorca.es", url: "https://www.menorca.es/" }
+            { name: "menorca.es", url: "https://www.menorca.es/en/Fort_Marlborough/8434" },
+            { name: "descobreixmenorca.com", url: "https://www.descobreixmenorca.com/en/british-menorca/fort-marlborough/" }
         ]
     },
     "torre-fornells": {
         title: "Torre de Fornells (Es Mercadal)",
         description: "Una de les torres de defensa britàniques més grans.",
         fullContent: `<p>Construïda per vigilar el port de Fornells, és un exemple robust de l'arquitectura militar costanera del segle XIX.</p>`,
-        image: "https://menorca.info/images/2021/05/29/torre-fornells.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqWyCPLnIO0bV9TDOmEGXXK0so-_7fnebyg&s",
+        imageAuthor: "Menorca diferente",
         sources: [
-            { name: "Viquipèdia – Torre de Fornells", url: "https://ca.wikipedia.org/wiki/Torre_de_Fornells" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Torre_de_Fornells/8876" },
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Torre_de_Fornells" }
         ]
     },
     "illa-rei": {
         title: "Illa del Rei (Maó)",
         description: "Antic hospital naval britànic i galeria d'art.",
         fullContent: `<p>Illot al mig del port de Maó que acull un històric hospital naval del s. XVIII i la prestigiosa galeria d'art Hauser & Wirth.</p>`,
-        image: "https://www.menorca.info/images/2023/07/20/illa-rei.jpg",
+        image: "https://www.menorca.es/documents/Imatges/8441img4.JPG",
         imageAuthor: "Menorca.info",
         sources: [
-            { name: "Illa del Rei", url: "https://illadelrei.cat/" }
+            { name: "menorca.es", url: "https://www.menorca.es/es/Isla_del_Rey/8441" }
         ]
     },
     "el-lazareto": {
         title: "El Lazareto (Maó)",
         description: "Fortalesa sanitària per a quarantenes.",
         fullContent: `<p>Immenses instal·lacions construïdes per aïllar vaixells i tripulacions sospitoses de malalties infeccioses al segle XIX.</p>`,
-        image: "https://menorca.info/images/2021/05/29/lazareto.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Lazareto_EntradaPrincipal.jpg",
+        imageAuthor: "Wikimedia commons",
         sources: [
-            { name: "Viquipèdia – Lazareto de Maó", url: "https://ca.wikipedia.org/wiki/Llatzaret_de_Ma%C3%B3" }
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/Isla_del_Lazareto" },
+            { name: "menorca.es", url: "https://www.menorca.es/es/LZLlatzeret/16771" }
         ]
     },
     "fortalesa-mola": {
@@ -279,50 +290,19 @@ window.cardData = {
         image: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Fortalesa_de_La_Mola_%28Menorca%2C_2_de_agosto_de_2014%29_35.JPG",
         imageAuthor: "Wikimedia Commons",
         sources: [
-            { name: "La Mola Menorca", url: "http://www.fortalesalamola.com/" }
+            { name: "fortalesalamola.com", url: "https://www.fortalesalamola.com/es/inicio" },
+            { name: "es.wikipedia.org", url: "https://es.wikipedia.org/wiki/La_Mola" }
         ]
     },
     "teatre-principal": {
         title: "Teatre Principal de Maó",
         description: "El teatre d'òpera més antic d'Espanya (1829).",
         fullContent: `<p>Una joia cultural amb una acústica excepcional, construït per l'arquitecte Giovanni Palagi. Ofereix una programació estable de teatre i òpera.</p>`,
-        image: "https://teatremao.com/wp-content/uploads/2021/05/Teatre-Principal-Mao.jpg",
-        imageAuthor: "Teatre Principal",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfX_XgIlxd0dQBvhbxKAmetjIaDsQ4qPUx5Q&s",
+        imageAuthor: "Wikimedia commons",
         sources: [
-            { name: "Teatre Principal", url: "https://teatremao.com/" }
-        ]
-    },
-    "sant-lluis": {
-        title: "Poble de Sant Lluís",
-        description: "Poble d'origen francès amb traçat rectilini.",
-        fullContent: `<p>Fundat pels francesos al segle XVIII, destaca pels seus carrers perfectament rectes i la seva arquitectura blanca tradicional.</p>`,
-        image: "https://menorca.info/images/2021/05/29/sant-lluis.jpg",
-        imageAuthor: "Menorca.info",
-        sources: [
-            { name: "Ajuntament de Sant Lluís", url: "https://www.ajsantlluis.org/" },
-            { name: "Viquipèdia – Sant Lluís", url: "https://ca.wikipedia.org/wiki/Sant_Llu%C3%ADs" }
-        ]
-    },
-    "palaus-senyorials": {
-        title: "Palaus Senyorials (Ciutadella)",
-        description: "Mostra del poder de l'aristocràcia menorquina.",
-        fullContent: `<p>El nucli antic de Ciutadella conserva magnífics palaus com Can Saura o el Palau Salort, testimonis de la riquesa de la noblesa.</p>`,
-        image: "https://menorca.info/images/2021/05/29/palau-salort.jpg",
-        imageAuthor: "Menorca.info",
-        sources: [
-            { name: "Viquipèdia – Palau Salort", url: "https://ca.wikipedia.org/wiki/Palau_Salort" },
-            { name: "Menorca.es – Ciutadella Patrimoni", url: "https://www.menorca.es/contingut.aspx?idpub=5050" }
-        ]
-    },
-    "cami-kane": {
-        title: "Camí d'en Kane",
-        description: "Ruta històrica construïda pel governador britànic Richard Kane.",
-        fullContent: `<p>Antic camí reial que unia els castells de Maó i Ciutadella, avui convertit en una ruta rural per a senderistes.</p>`,
-        image: "https://www.menorca.es/documents/Imatges/2079imgpub.JPG",
-        imageAuthor: "Menorca.es",
-        sources: [
-            { name: "Viquipèdia – Camí d'en Kane", url: "https://ca.wikipedia.org/wiki/Cam%C3%AD_d%27en_Kane" },
-            { name: "Menorca.es", url: "https://www.menorca.es/Contingut.aspx?IDIOMA=1&IdPub=8877" }
+            { name: "ca.wikipedia.org", url: "https://ca.wikipedia.org/wiki/Teatre_Principal_(Maó)" },
+            { name: "teatremao.com", url: "https://teatremao.com" }
         ]
     },
     "pedreres-lithica": {
@@ -332,19 +312,8 @@ window.cardData = {
         image: "https://www.menorca.es/documents/Imatges/13955img13.jpg",
         imageAuthor: "Menorca.es",
         sources: [
-            { name: "Líthica", url: "https://lithica.es/" },
-            { name: "Menorca.es - Líthica", url: "https://www.menorca.es/es/Pedreres_dHostal/10040" }
-        ]
-    },
-    "fars-historics": {
-        title: "Fars Històrics",
-        description: "Favàritx, Cavalleria, Punta Nati.",
-        fullContent: `<p>Els fars de Menorca s'alcen en paratges espectaculars. Destaquen Favàritx pel seu entorn lunar i Cavalleria pels seus penya-segats.</p>`,
-        image: "https://menorca.info/images/2021/05/29/far-favaritx.jpg",
-        imageAuthor: "Menorca.info",
-        sources: [
-            { name: "Viquipèdia – Far de Favàritx", url: "https://ca.wikipedia.org/wiki/Far_de_Fav%C3%A0ritx" },
-            { name: "Autoritat Portuària de Balears", url: "https://www.portsdebalears.com/ca/fars" }
+            { name: "lithica.es", url: "https://lithica.es/es/" },
+            { name: "menorca.es", url: "https://www.menorca.es/es/Lithica_Un_lugar_magico_esculpido_en_la_roca/13958" }
         ]
     },
 
@@ -426,8 +395,8 @@ window.cardData = {
         title: "Etapa 2: Es Grau – Favàritx",
         description: "8,6 km | Cor de la Reserva de Biosfera.",
         fullContent: `<p>Travessa s'Albufera des Grau i arriba al paisatge lunar del Cap de Favàritx.</p>`,
-        image: "https://menorca.info/images/2021/05/29/far-favaritx.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOxDMdA1TOLpNyEf6apR0X_cTSX7v97tv2A&s",
+        imageAuthor: "Turismo Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -436,8 +405,8 @@ window.cardData = {
         title: "Etapa 3: Favàritx – Arenal d’en Castell",
         description: "13,6 km | Costa nord salvatge.",
         fullContent: `<p>Etapa dura amb desnivells que recorre la costa més feréstega i verge del nord de l'illa.</p>`,
-        image: "https://menorca.info/images/2021/05/29/far-favaritx.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWWqUdL3KfXqV3iVJ6RtIW1hYzA-F8xkd1wA&s",
+        imageAuthor: "Descobreix Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -446,8 +415,8 @@ window.cardData = {
         title: "Etapa 4: Arenal – Cala Tirant",
         description: "10,8 km | Passant per Sanisera i Sanitja.",
         fullContent: `<p>Combina trams urbans amb la visita a l'interessant port natural de Sanitja i les restes romanes.</p>`,
-        image: "https://www.menorcatalayotica.info/Documents/Imatges/10860img10.jpg",
-        imageAuthor: "Menorca Talaiòtica",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEbDVNNUvQF0mMgQknynOe6mfv_YmaF_8_9g&s",
+        imageAuthor: "Wikimedia Commons",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -456,8 +425,8 @@ window.cardData = {
         title: "Etapa 5: Cala Tirant – Binimel·là",
         description: "9,6 km | Terra vermella i Cavalleria.",
         fullContent: `<p>Espectacular etapa dominada pel color vermell de les roques i la proximitat del Cap de Cavalleria.</p>`,
-        image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cala_del_Pilar_-_Menorca_-_panoramio.jpg",
-        imageAuthor: "Wikimedia Commons",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQEeldjGX2et6k9i61rereLjXRZrot7n2glw&s",
+        imageAuthor: "Descobreix Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -466,8 +435,8 @@ window.cardData = {
         title: "Etapa 6: Binimel·là – Els Alocs",
         description: "8,9 km | Cala Pregonda i l'etapa reina.",
         fullContent: `<p>Inclou el pas per la famosa Cala Pregonda i és una de les etapes més exigents i boniques.</p>`,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cala_Pregonda.jpg/1200px-Cala_Pregonda.jpg",
-        imageAuthor: "Wikimedia Commons",
+        image: "https://www.menorcadiferente.com/wp-content/uploads/2009/09/Cala-Pregonda.jpgCrèdit Imatge: Menorca Diferent",
+        imageAuthor: "Menorca Diferent",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -476,8 +445,8 @@ window.cardData = {
         title: "Etapa 7: Els Alocs – Algaiarens",
         description: "9,7 km | Cala Pilar i boscos d'alzines.",
         fullContent: `<p>Passa per la icònica Cala Pilar, amb la seva sorra vermella, i s'endinsa en boscos frondosos.</p>`,
-        image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Cala_del_Pilar_-_Menorca_-_panoramio.jpg",
-        imageAuthor: "Wikimedia Commons",
+        image: "https://www.civitatis.com/f/espana/menorca/guia/la-vall.jpg",
+        imageAuthor: "Disfruta Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -486,8 +455,8 @@ window.cardData = {
         title: "Etapa 8: Algaiarens – Cala Morell",
         description: "5,4 km | Dels boscos a la pedra.",
         fullContent: `<p>Surt de les platges de La Vall per arribar a la urbanització i necròpolis de Cala Morell.</p>`,
-        image: "https://www.menorcadiferente.com/wp-content/uploads/2010/01/necropolis-cala-morell-ciutadella-menorca.jpg",
-        imageAuthor: "Menorca Diferente",
+        image: "https://www.menorcatalayotica.info/Documents/Imatges/13685img2720230203101501.jpg",
+        imageAuthor: "Menorca Talaiotica",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -496,8 +465,8 @@ window.cardData = {
         title: "Etapa 9: Cala Morell – Punta Nati",
         description: "7 km | El desert de pedra.",
         fullContent: `<p>Immersió total en la 'Menorca seca', un paisatge de pedra infinita i barraques de bestiar.</p>`,
-        image: "https://www.menorca.es/documents/Imatges/8450img4.JPG",
-        imageAuthor: "Menorca.es",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6eLa7rv3N2ktVEpe9ZRYIL4fPG-SkYbq2A&s",
+        imageAuthor: "Descobreix Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -506,8 +475,8 @@ window.cardData = {
         title: "Etapa 10: Punta Nati – Ciutadella",
         description: "10,5 km | Pont d'en Gil i arribada a ponent.",
         fullContent: `<p>Arribada espectacular a Ciutadella passant pel famós arc natural del Pont d'en Gil.</p>`,
-        image: "https://www.menorca.es/documents/Imatges/263imgpub.JPG",
-        imageAuthor: "Menorca.es",
+        image: "https://www.miramarrentacar.com/blog/wp-content/uploads/2025/01/safarola.jpg",
+        imageAuthor: "Picasa",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -516,8 +485,8 @@ window.cardData = {
         title: "Etapa 11: Ciutadella – Cap d’Artrutx",
         description: "13,2 km | Costa oest i posta de sol.",
         fullContent: `<p>Caminada plana vorejant la costa urbanitzada de ponent fins al far d'Artrutx.</p>`,
-        image: "https://menorca.info/images/2021/05/29/bastio-sa-font.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://www.menorca.es/documents/Imatges/13718img13.jpg",
+        imageAuthor: "Menorca.es",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -526,8 +495,8 @@ window.cardData = {
         title: "Etapa 12: Cap d’Artrutx – Turqueta",
         description: "13,3 km | Entrada al sud verge.",
         fullContent: `<p>Deixem enrere la civilització per entrar de ple a les platges verges del sud com Son Saura.</p>`,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cala_Macarella.jpg/800px-Cala_Macarella.jpg",
-        imageAuthor: "Wikimedia Commons",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhFAbDN41PtJIfgT_MUTkoc8BeKKUIi1JAA&s",
+        imageAuthor: "Descobreix Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -536,8 +505,8 @@ window.cardData = {
         title: "Etapa 13: Turqueta – Cala Galdana",
         description: "6,4 km | Macarella i Macarelleta.",
         fullContent: `<p>El tram més famós, passant per les joies de la corona: Macarella i Macarelleta.</p>`,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cala_Macarella.jpg/800px-Cala_Macarella.jpg",
-        imageAuthor: "Wikimedia Commons",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMrnQSDrGPrMlG2HHC_X7gUeg1jtl01Y5akg&s",
+        imageAuthor: "Descobreix Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -546,8 +515,8 @@ window.cardData = {
         title: "Etapa 14: Cala Galdana – Sant Tomàs",
         description: "10,8 km | Cala Mitjana i Trebalúger.",
         fullContent: `<p>Recorregut per barrancs i cales verges, incloent la preciosa Cala Mitjana.</p>`,
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cala_Macarella.jpg/800px-Cala_Macarella.jpg",
-        imageAuthor: "Wikimedia Commons",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq1kwxkhuvU1ilviCPL3f_D8XEaA9AVY4gJg&s",
+        imageAuthor: "Descobreix Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -556,8 +525,8 @@ window.cardData = {
         title: "Etapa 15: Sant Tomàs – Son Bou",
         description: "6,4 km | La platja més llarga.",
         fullContent: `<p>Passejada vorejant la immensa platja de Son Bou i la seva zona humida.</p>`,
-        image: "https://menorca.info/images/2021/05/29/basilica-paleocristiana-son-bou.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://www.menorcadiferente.com/wp-content/uploads/2015/11/Cala-Talis.jpg",
+        imageAuthor: "Menorca diferente",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -566,8 +535,8 @@ window.cardData = {
         title: "Etapa 16: Son Bou – Cala en Porter",
         description: "8 km | Penya-segats i Llucalari.",
         fullContent: `<p>Tram amb desnivell que puja als penya-segats i baixa al barranc de Llucalari.</p>`,
-        image: "https://menorca.info/images/2021/05/29/basilica-paleocristiana-son-bou.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://www.menorca.es/documents/Imatges/8426img4.JPG",
+        imageAuthor: "Menorca.es",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -576,7 +545,7 @@ window.cardData = {
         title: "Etapa 17: Cala en Porter – Binisafúller",
         description: "11,8 km | Calescoves.",
         fullContent: `<p>Visita obligada a la necròpolis de Calescoves durant el recorregut.</p>`,
-        image: "https://apuntmenorca.com/wp-content/uploads/2021/10/apuntmenorca_mt_necropolis_calescoves.jpg",
+        image: "https://piscinas-naturales.es/wp-content/uploads/2025/04/Es-Calo-Blanc-Menorca-Playas.jpg",
         imageAuthor: "Apunt Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
@@ -586,8 +555,8 @@ window.cardData = {
         title: "Etapa 18: Binisafúller – Punta Prima",
         description: "8,1 km | Binibèquer Vell.",
         fullContent: `<p>Pas pel curiós poblat de pescadors de Binibèquer Vell.</p>`,
-        image: "https://menorca.info/images/2021/05/29/sant-lluis.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://apuntmenorca.com/wp-content/uploads/2022/05/apuntmenorca_atractiusnaturals_illaaire.jpg",
+        imageAuthor: "Apunt Menorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -596,8 +565,8 @@ window.cardData = {
         title: "Etapa 19: Punta Prima – Cala Sant Esteve",
         description: "7,3 km | Fort Marlborough.",
         fullContent: `<p>Entrada al port de Maó passant per fortificacions històriques.</p>`,
-        image: "https://menorca.info/images/2021/05/29/fort-marlborough.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://www.menorca.org/static/bloques/galerias/fotos/970.p.jpg?1516009952",
+        imageAuthor: "Menorca.org",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
@@ -606,8 +575,8 @@ window.cardData = {
         title: "Etapa 20: Cala Sant Esteve – Maó",
         description: "6 km | Es Castell i el Port.",
         fullContent: `<p>Caminada urbana pel costat del mar, gaudint de les vistes del port de Maó.</p>`,
-        image: "https://www.menorca.info/images/2023/07/20/illa-rei.jpg",
-        imageAuthor: "Menorca.info",
+        image: "https://visitmenorca.com/wp-content/uploads/2014/01/Mao_2.jpg",
+        imageAuthor: "VisitMenorca",
         sources: [
             { name: "Descobreixmenorca.com – Cami de Cavalls", url: "https://www.descobreixmenorca.com/es/cami-de-cavalls-2/" }
         ]
